@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Berries and Why I Hate Most of Them</title>
+        <style>
+            body{
+                background-image:linear-gradient(green,yellow)
+            }
+            .cherries{
+                background-image:url(./assets/images/CherryTree.jpeg);
+                background-size:contain;
+                /* background-repeat: repeat-y; */
+            }
+            .blueberries{
+                background-image:url(./assets/images/Blueberrybush.png);
+                background-size:contain;
+                /* background-repeat: repeat-y; */
+            }
+            .blackberries{
+                background-image:url(./assets/images/BlackberryPlant.png);
+                background-size:contain;
+                /* background-repeat: repeat-y; */
+            }
+            .container-outer{
+                display:grid;
+                grid-template-rows:0.5fr 3fr 0.75fr;
+                grid-template-columns:0.8fr 3fr 0.95fr;
+                margin-bottom:10px;
+            }
+            .container-outer >:nth-child(1){
+                grid-row:span 3;
+            }
+            .container-outer >:nth-child(2){
+                max-width:540px;
+                min-width:500px;
+                grid-column: span 1;
+                border:solid 3px white;
+                border-width:0 0 3px
+            }
+            .container-outer>:nth-child(4){
+                max-width:520px;
+                min-width:500px;
+            }
+            .cherries.container-outer >:nth-child(2){
+                background-color: maroon;
+            }
+            .blueberries.container-outer >:nth-child(2){
+                background-color: rgb(37, 109, 193);
+            }
+            .blackberries.container-outer >:nth-child(2){
+                background-color: rgb(0, 0, 0);
+            }
+            .container-inner{
+                /* max-width:520px;
+                min-width:500px; */
+                display:grid;
+                grid-template-columns: 1fr 1.75fr;
+                grid-template-rows:1fr 0.33fr 0.33fr 0.33fr;
+                padding:10px;
+                column-gap: 10px;
+                background-color:rgb(29, 63, 18);
+            }
+            .container-inner :nth-child(1){
+                grid-column: span 1;
+                background-image:none;
+            }
+            .container-inner :nth-child(2){
+                grid-row: span 4;
+                /* border:0.2px solid white; */
+                /* background-image:linear-gradient(to bottom right,rgb(29, 63, 18), green); */
+                background-image:radial-gradient(green 10%,rgb(29, 63, 18));
+                padding:10px;
+            }
+            .container-inner>div{
+                background-image: linear-gradient(white,rgb(255, 210, 125));
+                margin-bottom:7.5px;
+            }
+            .container-inner>:nth-child(2)>p{
+                padding:10px;
+                margin-top:-10px;
+                color:white;
+                font-size:medium;
+                font-weight: normal;
+            }
+            .container-inner>div>p{
+                margin:10px;
+                font-size:xx-small;
+                font-weight: 700;
+            }
+            h2{
+                text-align: center;
+                color:white;
+                font-size: 28pt;
+                margin:0px 20%;
+
+            }
+            span{
+                color:wheat
+            }
+            img{
+                width:100%;
+                /* border:solid 2px white */
+            }
+            @media(min-width:791.67px){
+            h1{
+                margin-left:17%;
+            }
+        }
+            @media (max-width:791.66px) {
+                h1{
+                margin-left:0%;
+                }
+            .first-container{
+                display:flex;
+            }
+            .first-container>:nth-child(1){
+                flex:0.8;
+            }
+            .first-container>:nth-child(2){
+                min-width:500px;
+            }
+            .first-container>:nth-child(3){
+                flex:0.95;
+            }
+            }
+        .first-container>:nth-child(2){
+                min-width:500px;
+                padding-left:10px;
+                padding-right:10px;
+                color:white;
+                background-color:rgb(189, 156, 93);
+                margin-bottom:10px;
+
+            }
+        </style>
+    </head>
+    <body>
+    <!-- <div class="first-container">
+        <div></div>
+        <div><h1>Berries and Why I Hate Most of Them</h1></div>
+        <div></div>
+    </div> -->
+        <div class=" cherries container-outer">
+            <div></div>
+            <div><h2>1. Cherries</h2></div>
+            <div></div>
+            <div class="container-inner">
+                <div><img src="./assets/images/Cherries.png"></div>
+                <div><p>Cherries are vibrant, juicy fruits renowned for their sweet-tart flavor and glossy, 
+                    deep red hue. Belonging to the genus Prunus, 
+                    they are members of the rose family and are closely related to plums, peaches, and almonds. 
+                    Cherries come in two main varieties: sweet cherries, which are typically enjoyed fresh, and sour cherries, often used in cooking and baking.
+                    <span>Well, what can I say about them, mostly they are too sour to consume.
+                        Also they ruin chocolate cakes for me and dont' even get me started on that
+                        god awful seed.</span>
+                </p></div>
+                <div><p>
+                    Cherries contain antioxidants, promote sleep, and are rich in vitamins and fiber.</p></div>
+                <div><p>
+
+                    Cherries come in various colors like red, yellow, and black, each with distinct flavors.</p></div>
+                <div><p>Cherries are a natural source of melatonin, aiding in regulating sleep patterns and promoting restfulness.</p></div>
+            </div>
+        </div>
+        <div class="blueberries container-outer">
+            <div></div>
+            <div><h2>2. Blueberries
+            </h2></div>
+            <div></div>
+            <div class="container-inner">
+                <div><img src="./assets/images/Blueberries.png"></div>
+                <div><p>
+                    Blueberries are small, round, and vibrant fruits that pack a punch of flavor and nutrition. They are known for their deep blue-purple hue and sweet-tart taste. Rich in antioxidants like anthocyanins, blueberries help combat oxidative stress and inflammation in the body, contributing to overall health and 
+                    well-being. These tiny berries are also a good source of fiber, vitamin C, and vitamin K.
+                    <span>A freaking disapoointment is what they were you know. Expected so much more
+                        from berries that are colored the nature's rarest color but i mean god,
+                    </span>
+                </p></div>
+                <div><p>
+                    Cherries contain antioxidants, promote sleep, and are rich in vitamins and fiber.</p></div>
+                <div><p>
+
+                    Cherries come in various colors like red, yellow, and black, each with distinct flavors.</p></div>
+                <div><p>Cherries are a natural source of melatonin, aiding in regulating sleep patterns and promoting restfulness.</p></div>
+            </div>
+        </div>
+        <div class="blackberries container-outer">
+            <div></div>
+            <div><h2>3. Blackberries
+            </h2></div>
+            <div></div>
+            <div class="container-inner">
+                <div><img src="./assets/images/Blackberry.png"></div>
+                <div><p>
+                    Blueberries are small, round, and vibrant fruits that pack a punch of flavor and nutrition. They are known for their deep blue-purple hue and sweet-tart taste. Rich in antioxidants like anthocyanins, blueberries help combat oxidative stress and inflammation in the body, contributing to overall health and 
+                    well-being. These tiny berries are also a good source of fiber, vitamin C, and vitamin K.
+                    <span>A freaking disapoointment is what they were you know. Expected so much more
+                        from berries that are colored the nature's rarest color but i mean god,
+                    </span>
+                </p></div>
+                <div><p>
+                    Cherries contain antioxidants, promote sleep, and are rich in vitamins and fiber.</p></div>
+                <div><p>
+
+                    Cherries come in various colors like red, yellow, and black, each with distinct flavors.</p></div>
+                <div><p>Cherries are a natural source of melatonin, aiding in regulating sleep patterns and promoting restfulness.</p></div>
+            </div>
+        </div>
+    </body>
+</html>
